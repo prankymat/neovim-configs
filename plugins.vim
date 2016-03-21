@@ -9,7 +9,7 @@ Plug 'keith/swift.vim'
 call plug#end()
 
 " YouCompleteMe conf
-let g:ycm_global_ycm_extra_conf = "/Users/Matthias/.config/nvim/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "~/.config/nvim/.ycm_extra_conf.py"
 
 " NERDCommenter
 filetype plugin on
