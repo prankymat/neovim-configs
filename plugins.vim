@@ -19,6 +19,6 @@ vnoremap ,c :call NERDComment(0,"toggle")<CR>
 " vim-airline
 set laststatus=2
 
-" Vim EasyAligh
+" Vim EasyAlign
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
