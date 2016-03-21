@@ -5,6 +5,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'Valloric/YouCompleteMe'
 Plug 'vim-airline/vim-airline'
 Plug 'keith/swift.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
 
@@ -22,3 +23,6 @@ set laststatus=2
 " Vim EasyAlign
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
+
+" invoke fuzzy finder
+nnoremap <leader>o :FZF<cr>

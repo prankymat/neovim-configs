@@ -10,7 +10,6 @@ nmap <leader>w :w!<cr>
 map <space> /
 map <c-space> ?
 
-
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
 
