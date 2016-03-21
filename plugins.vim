@@ -3,6 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
 Plug 'Valloric/YouCompleteMe'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
@@ -13,3 +14,6 @@ let g:ycm_global_ycm_extra_conf = "/Users/Matthias/.config/nvim/.ycm_extra_conf.
 filetype plugin on
 nnoremap ,c :call NERDComment(0,"toggle")<CR>
 vnoremap ,c :call NERDComment(0,"toggle")<CR>
+
+" vim-airline
+set laststatus=2

@@ -10,6 +10,7 @@ nmap <leader>w :w!<cr>
 map <space> /
 map <c-space> ?
 
+
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
 
@@ -44,3 +45,15 @@ map <c-space> ?
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
+
+" Move lines
+nnoremap <c-k> :m .-2<CR>==
+nnoremap <c-j> :m .+1<CR>==
+vnoremap <c-k> :m '<-2<CR>gv=gv
+vnoremap <c-j> :m '>+1<CR>gv=gv
+
+" Undo all changes
+command UndoAll execute "u1|u"
+
+" Diff edits done before save
+command Diff execute "w !diff % -"
