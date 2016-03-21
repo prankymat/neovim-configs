@@ -56,3 +56,10 @@ command UndoAll execute "u1|u"
 
 " Diff edits done before save
 command Diff execute "w !diff % -"
+
+" visual block indent
+vnoremap > >gv
+vnoremap < <gv
+
+" cycle through buffers
+nnoremap <C-b> :bnext<CR>

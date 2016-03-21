@@ -2,7 +2,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
-Plug 'Valloric/YouCompleteMe'
+Plug 'ervandew/supertab'
+Plug 'benekastah/neomake'
 Plug 'vim-airline/vim-airline'
 Plug 'keith/swift.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -26,3 +27,8 @@ xmap ga <Plug>(EasyAlign)
 
 " invoke fuzzy finder
 nnoremap <leader>o :FZF<cr>
+
+" Neomake code linter
+autocmd! BufWritePost * Neomake
+autocmd! BufWinEnter * Neomake
+let g:neomake_python_enabled_makers = ['pylint']
