@@ -66,3 +66,6 @@ nnoremap <C-b> :bnext<CR>
 
 " Quick insert in front (within block)
 noremap <leader>i (0<c-v>}kI
+
+" Style c++
+noremap <c-i> :%!astyle -A14<cr>
