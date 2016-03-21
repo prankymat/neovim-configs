@@ -4,6 +4,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
 Plug 'Valloric/YouCompleteMe'
 Plug 'vim-airline/vim-airline'
+Plug 'keith/swift.vim'
 
 call plug#end()
 
@@ -17,3 +18,7 @@ vnoremap ,c :call NERDComment(0,"toggle")<CR>
 
 " vim-airline
 set laststatus=2
+
+" Vim EasyAligh
+nmap ga <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
