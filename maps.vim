@@ -63,3 +63,6 @@ vnoremap < <gv
 
 " cycle through buffers
 nnoremap <C-b> :bnext<CR>
+
+" Quick insert in front (within block)
+noremap <leader>i (0<c-v>}kI

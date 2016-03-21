@@ -10,9 +10,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
 
-" YouCompleteMe conf
-let g:ycm_global_ycm_extra_conf = "~/.config/nvim/.ycm_extra_conf.py"
-
 " NERDCommenter
 filetype plugin on
 nnoremap ,c :call NERDComment(0,"toggle")<CR>
