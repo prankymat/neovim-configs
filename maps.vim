@@ -30,8 +30,8 @@ noremap <Right> <NOP>
 nnoremap U :redo<CR>
 nnoremap W b
 
-" map for term
-noremap <c-t> :term<CR>
+" Open terminal in new tab
+noremap <c-t> :tabnew<CR>:term<CR>
 
 " NERDCommenter
 filetype plugin on
@@ -69,3 +69,15 @@ noremap <leader>i (0<c-v>}kI
 
 " Style c++
 noremap <c-i> :%!astyle -A14<cr>
+
+" Edit file in new tab
+noremap <leader>t :tabedit<space>
+
+" Edit file in this buffer
+noremap <leader>e :e<space>
+
+" Switch to next tab
+noremap <s-t> :tabnext<cr>
+
+" Show trailing whitespace
+match ErrorMsg '\s\+$'

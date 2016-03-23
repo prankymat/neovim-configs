@@ -23,7 +23,7 @@ nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
 
 " invoke fuzzy finder
-nnoremap <leader>o :FZF<cr>
+nnoremap <leader>o :tabnew<CR>:FZF<cr>
 
 " Neomake code linter
 autocmd! BufWritePost * Neomake
