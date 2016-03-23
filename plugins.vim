@@ -30,4 +30,4 @@ autocmd! BufWritePost * Neomake
 autocmd! BufWinEnter * Neomake
 let g:neomake_python_enabled_makers = ['pylint']
 let g:neomake_cpp_enable_markers=['clang']
-let g:neomake_cpp_clang_args = ['-std=c++11', '-Wall', '-Wextra', '-pedantic', '-Wunused-variable']
+let g:neomake_cpp_clang_args = ['-std=c++11', '-fsyntax-only', '-Wall', '-Wextra', '-pedantic', '-Wunused-variable']
