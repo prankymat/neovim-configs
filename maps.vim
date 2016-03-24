@@ -81,3 +81,6 @@ noremap <s-t> :tabnext<cr>
 
 " Show trailing whitespace
 match ErrorMsg '\s\+$'
+
+" Disable ex-mode
+noremap Q <nop>
