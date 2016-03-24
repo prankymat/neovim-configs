@@ -32,3 +32,6 @@ set magic
 
 " Show matching brackets when text indicator is over them
 set showmatch 
+
+" Set current directory for terminal
+set autochdir
