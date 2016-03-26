@@ -7,6 +7,7 @@ Plug 'benekastah/neomake'
 Plug 'vim-airline/vim-airline'
 Plug 'keith/swift.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'christoomey/vim-system-copy'
 
 call plug#end()
 

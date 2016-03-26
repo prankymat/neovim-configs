@@ -84,3 +84,7 @@ match ErrorMsg '\s\+$'
 
 " Disable ex-mode
 noremap Q <nop>
+
+" Colon swapped with semicolon
+nnoremap ; :
+nnoremap : ;
