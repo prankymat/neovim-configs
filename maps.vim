@@ -86,5 +86,11 @@ match ErrorMsg '\s\+$'
 noremap Q <nop>
 
 " Colon swapped with semicolon
-nnoremap ; :
-nnoremap : ;
+"nnoremap ; :
+"nnoremap : ;
+
+" Ctrl-d to duplicate line
+nnoremap <c-d> Yp
+
+" 4 to line end
+nnoremap 4 $

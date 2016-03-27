@@ -8,6 +8,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'keith/swift.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'christoomey/vim-system-copy'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -32,3 +33,9 @@ autocmd! BufWinEnter * Neomake
 let g:neomake_python_enabled_makers = ['pylint']
 let g:neomake_cpp_enable_markers=['clang']
 let g:neomake_cpp_clang_args = ['-std=c++11', '-fsyntax-only', '-Wall', '-Wextra', '-pedantic', '-Wunused-variable']
+
+" Fugitive shortcuts
+nnoremap <leader>ga :Git add .<cr><cr>
+nnoremap <leader>gc :Gcommit<cr>
+nnoremap <leader>gst :Gstatus<cr>
+nnoremap <leader>gd :Gdiff<cr>
