@@ -91,6 +91,3 @@ noremap Q <nop>
 
 " Ctrl-d to duplicate line
 nnoremap <c-d> Yp
-
-" 4 to line end
-nnoremap 4 $
