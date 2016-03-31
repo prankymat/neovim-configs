@@ -39,3 +39,4 @@ nnoremap <leader>ga :Git add .<cr><cr>
 nnoremap <leader>gc :Gcommit<cr>
 nnoremap <leader>gst :Gstatus<cr>
 nnoremap <leader>gd :Gdiff<cr>
+nnoremap <leader>gp :Gpush<cr>
