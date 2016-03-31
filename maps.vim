@@ -91,3 +91,6 @@ noremap Q <nop>
 
 " Ctrl-d to duplicate line
 nnoremap <c-d> Yp
+
+" Write file faster
+nnoremap <leader>w :w<cr>
