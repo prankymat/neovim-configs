@@ -8,7 +8,7 @@ If you have any suggestions to my configuration, feel free to fork and make a pu
 
 ## How to use this repo
 Just clone it into your ```nvim``` config folder.
-``` git clone https://github.com/prankymat/neovim-configs/ ~/.configs/nvim ```
+``` git clone https://github.com/prankymat/neovim-configs/ ~/.config/nvim ```
 
 ## File structure
 ```
