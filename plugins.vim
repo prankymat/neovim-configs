@@ -40,3 +40,9 @@ nnoremap <leader>gc :Gcommit<cr>
 nnoremap <leader>gst :Gstatus<cr>
 nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>gp :Gpush<cr>
+
+" System copy
+let os = substitute(system('uname'), "\n", "", "")
+if os == "Linux"
+    let g:system_copy#copy_command='xclip -selection clipboard'
+endif
