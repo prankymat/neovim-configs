@@ -92,8 +92,9 @@ noremap Q <nop>
 " Ctrl-d to duplicate line
 nnoremap <c-d> Yp
 
-" Write file faster
+" Write file faster + habit making
 nnoremap <leader>w :w<cr>
+cabbrev w echoerr ":w disabled, please use ,w instead!"
 
 " Habit making: use ZZ ZQ instead
 cabbrev wq echoerr ":wq disabled, please use ZZ instead!"
