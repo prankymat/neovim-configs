@@ -11,6 +11,7 @@ Plug 'christoomey/vim-system-copy'
 Plug 'tpope/vim-fugitive'
 Plug 'lucapette/vim-textobj-underscore'
 Plug 'kana/vim-textobj-user'
+Plug 'mtth/scratch.vim'
 
 call plug#end()
 
@@ -48,3 +49,8 @@ let os = substitute(system('uname'), "\n", "", "")
 if os == "Linux"
     let g:system_copy#copy_command='xclip -selection clipboard'
 endif
+
+" Scratch
+nnoremap <F2> :ScratchInsert<cr>
+noremap <F3> :ScratchPreview<cr>
+let g:scratch_insert_autohide = 0
