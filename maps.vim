@@ -94,3 +94,6 @@ cabbrev q! echoerr ":q! disabled, please use ZQ instead!"
 
 " Move cursor half page up
 nnoremap <c-s> <c-u>
+
+" CQ to close vim without saving any buffer
+nnoremap CQ :cq<cr>
