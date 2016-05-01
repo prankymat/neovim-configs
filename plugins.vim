@@ -9,6 +9,8 @@ Plug 'keith/swift.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'christoomey/vim-system-copy'
 Plug 'tpope/vim-fugitive'
+Plug 'lucapette/vim-textobj-underscore'
+Plug 'kana/vim-textobj-user'
 
 call plug#end()
 

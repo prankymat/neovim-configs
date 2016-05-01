@@ -33,11 +33,6 @@ nnoremap W b
 " Open terminal in new tab
 noremap <c-t> :tabnew<CR>:term<CR>
 
-" NERDCommenter
-filetype plugin on
-nnoremap ,c :call NERDComment(0,"toggle")<CR>
-vnoremap ,c :call NERDComment(0,"toggle")<CR>
-
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
 map <c-space> ?
@@ -89,8 +84,8 @@ noremap Q <nop>
 "nnoremap ; :
 "nnoremap : ;
 
-" Ctrl-d to duplicate line
-nnoremap <c-d> Yp
+" ,d to duplicate line
+nnoremap <leader>d Yp
 
 " Write file faster + habit making
 nnoremap <leader>w :w<cr>
@@ -99,3 +94,6 @@ cabbrev w echoerr ":w disabled, please use ,w instead!"
 " Habit making: use ZZ ZQ instead
 cabbrev wq echoerr ":wq disabled, please use ZZ instead!"
 cabbrev q! echoerr ":q! disabled, please use ZQ instead!"
+
+" Move cursor half page up
+nnoremap <c-s> <c-u>
