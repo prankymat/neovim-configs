@@ -27,3 +27,6 @@ set smarttab
 
 "Always show current position
 set ruler
+
+" Always show tab line on yop
+set stal=2
