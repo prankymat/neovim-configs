@@ -52,5 +52,6 @@ endif
 
 " Scratch
 nnoremap <F2> :ScratchInsert<cr>
+inoremap <F3> <esc>:ScratchPreview<cr>
 noremap <F3> :ScratchPreview<cr>
 let g:scratch_insert_autohide = 0
