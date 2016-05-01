@@ -94,3 +94,7 @@ nnoremap <c-d> Yp
 
 " Write file faster
 nnoremap <leader>w :w<cr>
+
+" Habit making: use ZZ ZQ instead
+cabbrev wq <nop>
+cabbrev q <nop>
