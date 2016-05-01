@@ -98,4 +98,4 @@ cabbrev w echoerr ":w disabled, please use ,w instead!"
 
 " Habit making: use ZZ ZQ instead
 cabbrev wq echoerr ":wq disabled, please use ZZ instead!"
-cabbrev q echoerr ":q disabled, please use ZQ instead!"
+cabbrev q! echoerr ":q! disabled, please use ZQ instead!"
