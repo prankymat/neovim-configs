@@ -96,5 +96,5 @@ nnoremap <c-d> Yp
 nnoremap <leader>w :w<cr>
 
 " Habit making: use ZZ ZQ instead
-cabbrev wq <nop>
-cabbrev q <nop>
+cabbrev wq echoerr ":wq disabled, please use ZZ instead!"
+cabbrev q echoerr ":q disabled, please use ZQ instead!"
