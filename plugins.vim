@@ -6,13 +6,13 @@ Plug 'ervandew/supertab'
 Plug 'benekastah/neomake'
 Plug 'vim-airline/vim-airline'
 Plug 'keith/swift.vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'christoomey/vim-system-copy'
 Plug 'tpope/vim-fugitive'
 Plug 'lucapette/vim-textobj-underscore'
 Plug 'kana/vim-textobj-user'
 Plug 'mtth/scratch.vim'
 Plug 'Chiel92/vim-autoformat'
+Plug 'kien/ctrlp.vim'
 
 call plug#end()
 
@@ -28,8 +28,9 @@ set laststatus=2
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
 
-" invoke fuzzy finder
-nnoremap <leader>o :tabnew<CR>:FZF<cr>
+" invoke Ctrl-P
+let g:ctrl_map = '<c-p>'
+nnoremap <m-p> :CtrlP<space>
 
 " Neomake code linter
 autocmd! BufWritePost * Neomake
