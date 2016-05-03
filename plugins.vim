@@ -12,6 +12,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'lucapette/vim-textobj-underscore'
 Plug 'kana/vim-textobj-user'
 Plug 'mtth/scratch.vim'
+Plug 'Chiel92/vim-autoformat'
 
 call plug#end()
 
@@ -55,3 +56,6 @@ nnoremap <F2> :ScratchInsert<cr>
 inoremap <F3> <esc>:ScratchPreview<cr>
 noremap <F3> :ScratchPreview<cr>
 let g:scratch_insert_autohide = 0
+
+" Autoformat
+nnoremap <silent> <leader>af :Autoformat<cr>
