@@ -13,6 +13,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'mtth/scratch.vim'
 Plug 'Chiel92/vim-autoformat'
 Plug 'kien/ctrlp.vim'
+Plug 'vim-scripts/repmo.vim'
 
 call plug#end()
 
@@ -60,3 +61,7 @@ let g:scratch_insert_autohide = 0
 
 " Autoformat
 nnoremap <silent> <leader>af :Autoformat<cr>
+
+" repmo repeat motion
+let repmo_key = ";"
+let repmo_revkey = "\\"
