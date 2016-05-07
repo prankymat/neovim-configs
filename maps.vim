@@ -97,3 +97,9 @@ nnoremap <c-s> <c-u>
 
 " CQ to close vim without saving any buffer
 nnoremap CQ :cq<cr>
+
+" shift + h to line begin
+nnoremap <s-h> 0
+
+" shift + l to line end
+nnoremap <s-l> $
