@@ -23,3 +23,5 @@ Just clone it into your ```nvim``` config folder.
 └── styles.vim		(Coding styles, e.g. indentation level)
 ```
 
+## Wiki
+Checkout the [wiki page](https://github.com/prankymat/neovim-configs/wiki) for list of keymaps and usages.
