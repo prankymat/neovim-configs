@@ -2,9 +2,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
-"Plug 'ervandew/supertab'
 Plug 'Valloric/YouCompleteMe'
-"Plug 'benekastah/neomake'
 Plug 'vim-airline/vim-airline'
 Plug 'keith/swift.vim'
 Plug 'christoomey/vim-system-copy'
