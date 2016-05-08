@@ -2,8 +2,9 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdcommenter'
-Plug 'ervandew/supertab'
-Plug 'benekastah/neomake'
+"Plug 'ervandew/supertab'
+Plug 'Valloric/YouCompleteMe'
+"Plug 'benekastah/neomake'
 Plug 'vim-airline/vim-airline'
 Plug 'keith/swift.vim'
 Plug 'christoomey/vim-system-copy'
@@ -33,13 +34,6 @@ xmap ga <Plug>(EasyAlign)
 let g:ctrl_map = '<c-p>'
 nnoremap <m-p> :CtrlP<space>
 
-" Neomake code linter
-autocmd! BufWritePost * Neomake
-autocmd! BufWinEnter * Neomake
-let g:neomake_python_enabled_makers = ['pylint']
-let g:neomake_cpp_enable_markers=['clang']
-let g:neomake_cpp_clang_args = ['-std=c++11', '-fsyntax-only', '-Wall', '-Wextra', '-pedantic', '-Wunused-variable']
-
 " Fugitive shortcuts
 nnoremap <leader>ga :Git add .<cr><cr>
 nnoremap <leader>gc :Gcommit<cr>
@@ -65,3 +59,9 @@ nnoremap <silent> <leader>af :Autoformat<cr>
 " repmo repeat motion
 let repmo_key = ";"
 let repmo_revkey = "\\"
+
+" YouCompleteMe
+let g:ycm_global_ycm_extra_conf = "~/.config/nvim/plugged/YouCompleteMe/.ycm_extra_conf.py"
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_min_num_of_chars_for_completion = 1
