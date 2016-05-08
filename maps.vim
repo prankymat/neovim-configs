@@ -13,9 +13,6 @@ map <c-space> ?
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
 
-" Toggle paste mode on and off
-map <leader>pp :setlocal paste!<cr>
-
 " Habit making: disable arrow keys
 noremap <Up> <NOP>
 noremap <Down> <NOP>
@@ -103,3 +100,6 @@ nnoremap <s-h> 0
 
 " shift + l to line end
 nnoremap <s-l> $
+
+" Quickly edit nvim plugins
+nnoremap <leader>p :tabedit ~/nvim/plugins.vim<cr>
