@@ -59,7 +59,7 @@ let repmo_key = ";"
 let repmo_revkey = "\\"
 
 " YouCompleteMe
-let g:ycm_global_ycm_extra_conf = "~/.config/nvim/plugged/YouCompleteMe/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "~/.config/nvim/extra_conf/.ycm_extra_conf.py"
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_min_num_of_chars_for_completion = 1
